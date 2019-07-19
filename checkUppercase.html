@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiem tra ky tu du tien co phai chu in hoa hay khong</title>
+</head>
+<body>
+<input type="text" id="str" oninput="checkUppercase()" placeholder="Enter the string here">
+<p id="kq"></p>
+<script>
+    function checkUppercase() {
+        let str=document.getElementById('str').value;
+        regexp=/^[A-Z]/;
+        if(regexp.test(str)){
+            document.getElementById("kq").innerText="String's first charracter is uppercase";
+        }else{
+            document.getElementById("kq").innerText="String's first charracter is not uppercase";
+
+        }
+    }
+</script>
+</body>
+</html>
